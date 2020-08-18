@@ -1,0 +1,6 @@
+<p>Are you sure you want to delete <b>{{item.title}}</b> ?</p>
+<form method="POST" action="">
+    {%csrf_token%}
+    <input type="submit" value="Delete">
+</form>
+<p>Go back to home page <a href="{%url 'tasks:home'%}" type="button">Cancel</a></p>
